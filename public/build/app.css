@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    font-family: PT Sans, "PT Sans";
+}
+
+body{
+    /* L'image est positionnée en fond et est centrée */
+    background: url('/build/images/background.jpg') no-repeat center center fixed;
+    /* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    gap: 80px;
+}
+
+.li-menu{
+    list-style: none;
+    
+    
+}
+
+.btn-nav{
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+nav{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    background-color:#153D61;
+    padding-top: 0px;
+    width: 100%;
+
+    
+}
+
+#title-home{
+    color: white;
+    font-size:  90px;
+    margin-top:140px;  
+    margin-left:150px; 
+    padding-bottom: 20px;
+    
+}
+
+#nom{
+    color: white;
+    font-size:  50px;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#formation{
+    color: white;
+    font-size:  50px;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-left: 350px;
+}
+
+#language{
+    color: white;
+    font-size:  50px;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
