@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+    <div class="contactform">
+
+        
+        {{ form_label(form.Nom, 'Nom', {'label_attr': {'class': 'label'}} )}}
+            {{ form_row(form.Nom, {'attr': {'class': 'widget'}}) }}
+
+        {{ form_label(form.Prenom, 'Prénom', {'label_attr': {'class': 'label'}} )}}
+            {{ form_row(form.Prenom, {'attr': {'class': 'widget'}}) }}
+
+        {{ form_label(form.Email, 'Email', {'label_attr': {'class': 'label'}} )}}
+            {{ form_row(form.Email, {'attr': {'class': 'widget'}}) }}
+
+        {{ form_label(form.Message, 'Message', {'label_attr': {'class': 'label'}} )}}
+            {{ form_row(form.Message, {'attr': {'class': 'widget-message'}}) }}
+
+        
+        <button class="btn-submit"type="submit">Envoyer</button>
+        {{ form_end(form) }}
+
+
+
+    </div>
+
+    
+{% endblock %}

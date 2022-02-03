@@ -2,12 +2,13 @@
 
 namespace App\DataFixtures;
 
-use Doctrine\Bundle\FixturesBundle\Fixture;
+use App\Entity\Projet;
 use Doctrine\Persistence\ObjectManager;
+use Doctrine\Bundle\FixturesBundle\Fixture;
 
 class ProjetFixtures extends Fixture
 {
-    public const Projet = [
+    public const PROJET = [
         ["Bloc&Dex", "/build/images/Blocedex.jpg", "Projet Bloc & Dex : Premier Projet Réel pour un chirurgien du
         CHU de Nantes. L’idée étais de créer un outils pour les internes en médecine pour qu’ils puissent répertoriez leurs interventions plus facilement et accedez a des données mise en forme de graphique.
         ", ""],
@@ -20,9 +21,15 @@ class ProjetFixtures extends Fixture
 
     public function load(ObjectManager $manager): void
     {
-        // $product = new Product();
-        // $manager->persist($product);
-
+        foreach (self::PROJET as $projetName) {
+            $projet = new Projet();
+            $projet->setNom($projetName[0]);
+            $projet->setImage($projetName[1]);
+            $projet->setDescription($projetName[2]);
+            $projet->setLien($projetName[3]);
+            
+            $manager->persist($projet);
+        }
         $manager->flush();
     }
 }
