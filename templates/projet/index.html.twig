@@ -9,7 +9,10 @@
         {% for projet in projets %}
             <div class="conteneur-projet">    
                     
-                    <div><a href="{{ projet.lien }}"><img class="imgprojet" src="{{ projet.image }}"></a></div>
+                    <div class="blockimage">
+                        <a href="{{ projet.lien }}"><img class="imgprojet" src="{{ projet.image }}">
+                        </a>
+                    </div>
                         <div class="descriptionprojet">
                             <h1 class="titre">{{ projet.nom }}</h1>
                             {{ projet.description }}

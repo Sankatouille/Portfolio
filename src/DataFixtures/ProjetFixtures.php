@@ -14,7 +14,7 @@ class ProjetFixtures extends Fixture
         ", ""],
 
         ["AdopteUnChat", "/build/images/Adopteunchat.png", "Projet fictif AdopteUnChat: Lors de ma formation j'avais pour mission de créer un site d'adoption de chat avec un system de CRUD en php pure. Pour ce projet, mes collègues et moi nous somment inspirez du site de rencontre adopteUnMec, c'est ce qui à donner vie à ce projet.",
-        "https://bustling-nectarine-1a6.notion.site/cbaf80463eac41c8a1dec41da4a2bd52?v=2ac0e4a04e1148068539436a64cfdbc1"],
+        ""],
         
         
     ];
